@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Debts</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let debt of debts" data-test="debt-list-item" (click)="selected.emit(debt)">
+          <h3 matLine>{{debt.name}}</h3>
+          <p matLine>{{debt.amount}}</p>
+          
+  
+          <button mat-icon-button (click)="deleted.emit(debt); $event.stopImmediatePropagation()">
+            <mat-icon *ngIf="!readonly">delete</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>

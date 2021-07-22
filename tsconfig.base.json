@@ -14,8 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "@debts/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@debts/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@debts/core-data": ["libs/core-data/src/index.ts"],
+      "@debts/core-state": ["libs/core-state/src/index.ts"],
+      "@debts/material": ["libs/material/src/index.ts"],
+      "@debts/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

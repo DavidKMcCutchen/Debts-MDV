@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <debts-debts-list
+        [debts]="allDebts$ | async"
+        (selected)="selectDebt($event)"
+        (deleted)="deleteDebt($event)"
+      ></debts-debts-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <debts-debts-details
+        [debt]="selectedDebt$ | async"
+        (saved)="saveDebt($event)"
+        (cancelled)="resetDebt()"
+        [form]="form"
+      ></debts-debts-details>
+    </div>
+  </div>

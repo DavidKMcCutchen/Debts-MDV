@@ -1,0 +1,14 @@
+{
+  "debts": [
+    {
+      "id": 1,
+      "name": "Credit Card",
+      "amount": "$5900"
+    },
+    {
+      "id": 2,
+      "name": "Small Loan",
+      "amount": "$1000"
+    }
+  ]
+}
